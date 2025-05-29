@@ -8,14 +8,13 @@ namespace API_Produtos.Controllers
     [Route("api/[controller]")]
     public class ProdutosController : ControllerBase
     {
-        // GET: api/produtos
+
         [HttpGet]
         public ActionResult<List<Produto>> Get()
         {
             return ProdutoRepository.GetAll();
         }
 
-        // GET: api/produtos/1
         [HttpGet("{id}")]
         public ActionResult<Produto> Get(int id)
         {
@@ -25,7 +24,6 @@ namespace API_Produtos.Controllers
             return produto;
         }
 
-        // POST: api/produtos
         [HttpPost]
         public IActionResult Post([FromBody] Produto produto)
         {
@@ -33,7 +31,6 @@ namespace API_Produtos.Controllers
             return CreatedAtAction(nameof(Get), new { id = produto.Id }, produto);
         }
 
-        // PUT: api/produtos/1
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] Produto produto)
         {
@@ -47,7 +44,6 @@ namespace API_Produtos.Controllers
             return NoContent();
         }
 
-        // DELETE: api/produtos/1
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
