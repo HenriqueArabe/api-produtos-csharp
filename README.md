@@ -28,7 +28,7 @@ Esse projeto serve como demonstração de:
 
 ## 🛠️ Tecnologias
 
-* **.NET 6.0**
+* **.NET 8.0**
 * **ASP.NET Core Web API**
 * **Swashbuckle/Swagger**
 * **C# 10**
