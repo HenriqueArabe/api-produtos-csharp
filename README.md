@@ -37,7 +37,7 @@ Esse projeto serve como demonstração de:
 
 ## ⚙️ Pré-requisitos
 
-* [.NET 6 SDK](https://dotnet.microsoft.com/download)
+* [.NET 8 SDK](https://dotnet.microsoft.com/download)
 * **Git** instalado
 * **Visual Studio 2022** (ou superior) ou qualquer IDE compatível
 
